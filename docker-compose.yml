@@ -19,7 +19,8 @@ services:
       - "8080:80"
     depends_on:
       - practicalsql-db
-
+    volumes:
+      - ./practicalsql_data:/var/lib/pgadmin/storage/${PGADMIN_USER_FOLDER}
 
 volumes:
   data:
