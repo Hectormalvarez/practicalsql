@@ -9,6 +9,7 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - data:/var/lib/postgresql/data
+      - ./practicalsql_data:/practicalsql_data
 
   pgadmin:
     image: dpage/pgadmin4
